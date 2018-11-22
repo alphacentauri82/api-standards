@@ -6,6 +6,8 @@ category: response
 example_apis: []
 ---
 
+> All error codes should correspond to a single error condition. If you find yourself using the word `or` in an error message, it should probably be multiple error codes
+
 Any non 200 response body should follow a standard format. This should be consistent for all products, as an error may be product specific (invalid parameters) or global in nature (invalid authorization). The [HTTP Problem draft](https://tools.ietf.org/html/draft-ietf-appsawg-http-problem-02), specifically the JSON Object provide a familiar format used by other APIs that provides a set of standard properties while allowing additional properties when needed for a particular error condition.
 
 ### Examples
