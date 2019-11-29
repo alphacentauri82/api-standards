@@ -2,6 +2,8 @@ This is a living document containing the Nexmo API standards. We'll be discussin
 new standards in #api-standards on Slack, so please join us if you're interested
 in contributing.
 
+You can submit PRs for proposed changes at [https://github.com/Nexmo/api-standards](https://github.com/Nexmo/api-standards)
+
 ## Open API Spec
 
 We document APIs using [Open API 3.0](https://swagger.io/docs/specification/about/)
