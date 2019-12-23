@@ -1,8 +1,6 @@
 This is a living document containing the Nexmo API standards. We'll be discussing
-new standards in #api-standards on Slack, so please join us if you're interested
+new standards in `#api-standards` on Slack, so please join us if you're interested
 in contributing.
-
-You can submit PRs for proposed changes at [https://github.com/Nexmo/api-standards](https://github.com/Nexmo/api-standards)
 
 ## Open API Spec
 
@@ -20,3 +18,7 @@ We document APIs using [Open API 3.0](https://swagger.io/docs/specification/abou
 * All APIs that allow updating a resource will also allow fetching a resource.
 * In each context properties that are always unknown may be omitted. For example: a request to sending an SMS never contains DLR data.
 * Properties that are potentially unknown should be included, but without a value. For example, if the Cloud Communications Platform cannot call the phone number defined in a request from Call API, the return properties will not have a valid `call_start` and `call_end`.
+
+## Contributing to These Standards
+
+These standards are on GitHub at [https://github.com/Nexmo/api-standards](https://github.com/Nexmo/api-standards). Vonage employees may submit pull requests to propose changes or improve these standards at any time.
