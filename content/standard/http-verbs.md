@@ -6,12 +6,12 @@ category: request
 example_apis: []
 ---
 
-- Use HTTP methods to map CRUD actions on Resources i.e. 
-  - POST creates a new Resources in a Collection (see also [201 status](/api-standards/http-code/201) )
-  - DELETE removes a Resource
-  - GET lists Resources
-  - PUT replaces a complete Resource
-  - PATCH partially updates a Resource
+- Use HTTP methods appropriately for the operation you are performing. CRUD (Create, Read, Update, Delete) operations and the correct response for each are as follows:
+  - GET lists Resources in a Collection, or a single Resource, returning a [200 status](/api-standards/http-code-200) and the requested Resource(s)
+  - POST creates a new Resource in a Collection, returning a [201 status](/api-standards/http-code/201) and the new Resource
+  - PUT replaces a complete Resource with the supplied representation, returning a [200 status](/api-standards/http-code-200) and the udpated Resource
+  - PATCH partially updates a Resource with the supplied fields, returning a [200 status](/api-standards/http-code-200) and the udpated Resource
+  - DELETE removes a Resource, returning a [204 status](/api-standards/http-code/204) status and no body
 
 ### Examples
 
@@ -28,4 +28,6 @@ Pre-existing standard
 
 ### Related Links
 
-* [RFC2616](https://tools.ietf.org/html/rfc2616#section-9)
+* The [Method Definitions in the RFC2616 HTTP 1.1 spec](https://tools.ietf.org/html/rfc2616#section-9) are relevant to this part of API design.
+* For the not-so-happy path, there are [error format guidelines](/api-standards/standard/errors) to guide you.
+* All responses should follow [HAL-JSON format](/api-standards/standard/hal-json).
