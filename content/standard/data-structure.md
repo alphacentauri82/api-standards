@@ -20,8 +20,8 @@ We aim to use consistent terminology across all APIs. Here are the commonly used
 * `count` - The number of parts your message was divided into in order to be sent correctly.
 * `total` - The amount of objects found as a result of a search request.
 * `direction` - Inbound (MO) or Outbound (MT)
-* `start` - The time the communication started in https://en.wikipedia.org/wiki/ISO_8601 format.
-* `end` - The time the communication ended in https://en.wikipedia.org/wiki/ISO_8601 format.
+* `started_at` - The time the communication started in https://en.wikipedia.org/wiki/ISO_8601 format.
+* `ended_at` - The time the communication ended in https://en.wikipedia.org/wiki/ISO_8601 format.
 * `duration` - The duration of the call in seconds.
 * `balance` - The amount of money left in your Nexmo account.
 * `rate` - The price for each request. This is per request for text based messages, or per second for voice.

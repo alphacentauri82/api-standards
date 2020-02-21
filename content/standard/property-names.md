@@ -16,6 +16,7 @@ example_apis: []
 - `machine_detection`
 - `call_id`
 - `balance_transfer_id`
+- `received_at`
 
 ### Why did we choose this?
 
