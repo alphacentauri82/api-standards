@@ -7,7 +7,7 @@ example_apis: []
 ---
 
 - Use HTTP methods to map CRUD actions on Resources i.e. 
-  - POST creates a new Resources in a Collection
+  - POST creates a new Resources in a Collection (see also [201 status](/api-standards/http-code/201) )
   - DELETE removes a Resource
   - GET lists Resources
   - PUT replaces a complete Resource
