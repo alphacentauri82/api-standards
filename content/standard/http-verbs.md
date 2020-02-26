@@ -8,9 +8,9 @@ example_apis: []
 
 - Use HTTP methods appropriately for the operation you are performing. CRUD (Create, Read, Update, Delete) operations and the correct response for each are as follows:
   - GET lists Resources in a Collection, or a single Resource, returning a [200 status](/api-standards/http-code-200) and the requested Resource(s)
-  - POST creates a new Resource in a Collection, returning a [201 status](/api-standards/http-code/201) and the new Resource
-  - PUT replaces a complete Resource with the supplied representation, returning a [200 status](/api-standards/http-code-200) and the udpated Resource
-  - PATCH partially updates a Resource with the supplied fields, returning a [200 status](/api-standards/http-code-200) and the udpated Resource
+  - POST creates a new Resource in a Collection, returning a [201 status](/api-standards/http-code/201) and the new Resource if it is available. For a Resource that is not synchronously created, a [202 status](/api-standards/http-code/202) and as much information as is currently available should be returned; usually there will be a callback to deliver the Resource once it is available.
+  - PUT replaces a complete Resource with the supplied representation, returning a [200 status](/api-standards/http-code-200) and the updated Resource
+  - PATCH partially updates a Resource with the supplied fields, returning a [200 status](/api-standards/http-code-200) and the updated Resource
   - DELETE removes a Resource, returning a [204 status](/api-standards/http-code/204) status and no body
 
 ### Examples
