@@ -6,7 +6,7 @@ category: properties
 example_apis: []
 ---
 
-When working with dates, our APIs will use consistent naming and formats.
+When working with dates, our APIs use consistent naming and formats.
 
 Field names should be `[something]_at`. Examples include:
 
@@ -14,7 +14,7 @@ Field names should be `[something]_at`. Examples include:
 * `started_at`
 * `last_event_at`
 
-The format will be [ISO 8601](https://en.wikipedia.org/wiki/ISO_8601) standard, for example: `2020-02-21T14:43:23+00:00` _or_ `2020-02-21T14:43:23Z`.
+The format will be [ISO 8601](https://en.wikipedia.org/wiki/ISO_8601) standard, for example: `2020-02-21T14:43:23+00:00`.
 
 ### Examples
 
